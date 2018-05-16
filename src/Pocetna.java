@@ -13,10 +13,10 @@ public class Pocetna {
 		listaNaBroevi.add(88);
 		listaNaBroevi.add(22);
 		List<Integer> pomaliOd50 = listaNaBroevi.stream()
-				.filter(x-> x<50)
+				.filter(x-> x<20)
 				.collect(Collectors.toList());
 		List<Integer> duplirani = listaNaBroevi.stream()
-				.map(x -> x*2)
+				.map(x -> x*3)
 				.collect(Collectors.toList());
 		System.out.println(pomaliOd50);
 		System.out.println(duplirani);
